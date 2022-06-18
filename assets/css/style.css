@@ -1,0 +1,78 @@
+/* Fontes Open Sans 400 REGULAR e 700 BOLD do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(95, 69, 168);
+    --primary-color-darker: rgb(84, 57, 160);
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0; /* Resetando a margem */
+    padding: 0; /* Resetando o padding */
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h2 { /* Diminuindo o H2 */
+    font-size: 1em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input { /* modificação da caixa do input */
+    font-size: 20px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus { /* Efeito de seleção do input */
+    outline: 1px solid var(--primary-color);
+}
+
+form button { /* Modificando o buttonn */
+    border: none;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+form button:hover { /* Efeito */ 
+    background: var(--primary-color-darker);
+}
+
+.tabela-imc { /* Box pra tabela do IMC */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 80%;
+    line-height: 0.5em;
+}
+
+.tabela-imc p { /* Mudando dos parágrafos */
+    font-size: 18px;
+}
