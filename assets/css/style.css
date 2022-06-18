@@ -74,5 +74,24 @@ form button:hover { /* Efeito */
 }
 
 .tabela-imc p { /* Mudando dos parágrafos */
-    font-size: 18px;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tabela-imc {
+        display: block;
+    }
+
+    .tabela-imc article {
+        margin-bottom: 50px;
+    }
+
+    .tabela-imc p {
+        font-size: 20px;
+    }
 }

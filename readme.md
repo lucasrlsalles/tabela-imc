@@ -1,7 +1,7 @@
 <h1 align="center">Tabela IMC: Calcule seu IMC</h1>
 
 <h2>Descrição:</h2>
-<p>Exercício que tem como proposta uma página HTML que utiliza JS para calcular pegando como referência PESO e ALTURA para imprimir na tela o seu índice de massa corporal e exibe em qual nível você se encaixa.</p><br>
+<p>Exercício que tem como proposta uma página HTML que utiliza JS para calcular pegando como referência PESO e ALTURA para imprimir na tela o seu índice de massa corporal e exibe em qual classificação você se encaixa.</p><br>
 
 <h3>Ferramentas utilizadas</h3>
 <div style="display: inline_block"></br>
