@@ -77,15 +77,23 @@ form button:hover { /* Efeito */
     font-size: 20px;
 }
 
+.paragrafo-resultado, .wrong {
+    background: rgb(105, 245, 168);
+    padding: 10px;
+}
+
+.wrong {
+    background: rgb(238, 164, 164);
+}
+
 @media (max-width: 640px) {
     .tabela-imc {
         display: block;
-        width: 100%;
         
     }
 
     .tabela-imc article {
-        margin-bottom: 50px;
+        margin: 50px auto;
     }
 
     .tabela-imc p {
