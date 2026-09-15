@@ -1,0 +1,46 @@
+/* Fontes Open Sans 400 REGULAR e 700 BOLD do Google Fonts */
+@import "/assets/css/global/global.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+
+/* Tabela do IMC */
+
+.tabela-imc {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    line-height: 0.5em;
+}
+
+.tabela-imc article {
+    width: 48%;
+}
+
+.tabela-imc p {
+    font-size: 20px;
+}
+
+/* Resultado */
+
+.paragrafo-resultado,
+.wrong {
+    background: rgb(105, 245, 168);
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    word-break: break-word;
+}
+
+.wrong {
+    background: rgb(238, 164, 164);
+}
+

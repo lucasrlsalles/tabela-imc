@@ -1,0 +1,120 @@
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 640px) {
+
+    body {
+        padding: 0 15px;
+        font-size: 1.1em;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .tabela-imc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tabela-imc article {
+        width: 48%;
+    }
+
+    .tabela-imc p {
+        font-size: 17px;
+    }
+
+    form button {
+        margin-top: 30px;
+    }
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 0 10px;
+        font-size: 1em;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .tabela-imc {
+        display: block;
+    }
+
+    .tabela-imc article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tabela-imc article:last-child {
+        margin-bottom: 0;
+    }
+
+    .tabela-imc p {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+
+    form input {
+        font-size: 18px;
+        height: 48px;
+    }
+
+    form button {
+        font-size: 17px;
+        height: 48px;
+        margin-top: 25px;
+    }
+
+    .paragrafo-resultado,
+    .wrong {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+/* ========================================= */
+/* CELULARES MUITO PEQUENOS */
+/* ========================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .tabela-imc p {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 16px;
+    }
+}
