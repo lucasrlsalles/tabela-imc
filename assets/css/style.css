@@ -14,89 +14,244 @@
 }
 
 body {
-    margin: 0; /* Resetando a margem */
-    padding: 0; /* Resetando o padding */
+    margin: 0;
+    padding: 0 20px;
     background: var(--primary-color);
-    font-family: 'Open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
 }
 
-h2 { /* Diminuindo o H2 */
-    font-size: 1em;
-}
+/* Container */
 
 .container {
+    width: 100%;
     max-width: 640px;
+
     margin: 50px auto;
+
     background: var(--white-color);
     padding: 20px;
+
     border-radius: 10px;
 }
 
-form input, form label, form button {
+/* Títulos */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/* Formulário */
+
+form input,
+form label,
+form button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-form input { /* modificação da caixa do input */
+form input {
     font-size: 20px;
     height: 50px;
     padding: 0 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form input:focus { /* Efeito de seleção do input */
+form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button { /* Modificando o buttonn */
+/* Botão */
+
+form button {
     border: none;
+
     background: var(--primary-color);
     color: var(--white-color);
+
     font-size: 18px;
     font-weight: 700;
+
     height: 50px;
+
     cursor: pointer;
+
     margin-top: 50px;
+
+    border-radius: 5px;
+
+    transition: background 0.2s ease;
 }
 
-form button:hover { /* Efeito */ 
+form button:hover {
     background: var(--primary-color-darker);
 }
 
-.tabela-imc { /* Box pra tabela do IMC */
+/* Tabela do IMC */
+
+.tabela-imc {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    width: 80%;
+
+    width: 100%;
+
+    margin: 0 auto;
+
     line-height: 0.5em;
 }
 
-.tabela-imc p { /* Mudando dos parágrafos */
+.tabela-imc article {
+    width: 48%;
+}
+
+.tabela-imc p {
     font-size: 20px;
 }
 
-.paragrafo-resultado, .wrong {
+/* Resultado */
+
+.paragrafo-resultado,
+.wrong {
     background: rgb(105, 245, 168);
+
     padding: 10px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    word-break: break-word;
 }
 
 .wrong {
     background: rgb(238, 164, 164);
 }
 
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
 @media (max-width: 640px) {
+
+    body {
+        padding: 0 15px;
+        font-size: 1.1em;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
     .tabela-imc {
-        display: block;
-        
+        display: flex;
+        justify-content: space-between;
     }
 
     .tabela-imc article {
-        margin: 50px auto;
+        width: 48%;
     }
 
     .tabela-imc p {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    form button {
+        margin-top: 30px;
+    }
+}
+
+
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 0 10px;
+        font-size: 1em;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .tabela-imc {
+        display: block;
+    }
+
+    .tabela-imc article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tabela-imc article:last-child {
+        margin-bottom: 0;
+    }
+
+    .tabela-imc p {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+
+    form input {
+        font-size: 18px;
+        height: 48px;
+    }
+
+    form button {
+        font-size: 17px;
+        height: 48px;
+        margin-top: 25px;
+    }
+
+    .paragrafo-resultado,
+    .wrong {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+/* ========================================= */
+/* CELULARES MUITO PEQUENOS */
+/* ========================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .tabela-imc p {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 16px;
     }
 }
