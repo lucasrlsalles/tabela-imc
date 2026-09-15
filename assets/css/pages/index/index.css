@@ -1,7 +1,6 @@
-/* Fontes Open Sans 400 REGULAR e 700 BOLD do Google Fonts */
-@import "/assets/css/global/global.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+@import "../../global/global.css";
 
 
 /* Tabela do IMC */
@@ -25,6 +24,7 @@
     font-size: 20px;
 }
 
+
 /* Resultado */
 
 .paragrafo-resultado,
@@ -43,4 +43,3 @@
 .wrong {
     background: rgb(238, 164, 164);
 }
-
