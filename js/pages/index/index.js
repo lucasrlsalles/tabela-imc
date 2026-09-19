@@ -1,6 +1,20 @@
 // Capturar o evento de submit do formulário
 const form = document.querySelector('#formulario');
 
+const inputAltura = document.querySelector('#altura');
+
+// Colocando o ponto automaticamente na altura
+inputAltura.addEventListener('input', function () {
+    let valor = this.value.replace(/\D/g, '');
+
+    // Se o usuário digitar 154, transforma em 1.54
+    if (valor.length === 3) {
+        valor = valor.slice(0, 1) + '.' + valor.slice(1);
+    }
+
+    this.value = valor;
+});
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -14,10 +28,8 @@ form.addEventListener('submit', function (event) {
     }
 
     // Verificando se a altura foi preenchida corretamente
-    // A altura precisa obrigatoriamente ter ponto.
-    // Exemplos válidos: 1.70, 1.80, 1.65
     if (!/^\d+\.\d{1,2}$/.test(inputAltura.value)) {
-        setResultado('Altura inválida. Digite usando ponto, por exemplo: 1.70', false);
+        setResultado('Altura inválida. Digite um valor válido, por exemplo: 1.70', false);
         return;
     }
 
