@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,16 @@
     <title>Calcule seu IMC</title>
     <link rel="stylesheet" href="./assets/css/pages/index/index.css">
 </head>
+
 <body>
 
     <!-- Container -->
     <section class="container">
+
         <h1>Tabela IMC</h1>
+
         <div class="tabela-imc">
+
             <article>
                 <h2>IMC</h2>
                 <p>Menos que 18,5</p>
@@ -22,6 +27,7 @@
                 <p>Entre 35 e 39,9</p>
                 <p>Mais do que 40</p>
             </article>
+
             <article>
                 <h2>Classificação</h2>
                 <p>Abaixo do peso</p>
@@ -31,21 +37,48 @@
                 <p>Obesidade grau 2</p>
                 <p>Obesidade grau 3</p>
             </article>
+
         </div>
+
         <h1>Calcule seu IMC</h1>
+
         <form action="/" id="formulario" method="POST">
+
             <label for="peso">Peso: </label>
-            <input type="text" id="peso" name="peso" placeholder="0">
+
+            <input
+                type="text"
+                id="peso"
+                name="peso"
+                placeholder="Ex: 70.5"
+                maxlength="6"
+                inputmode="decimal"
+                required
+                title="Digite um peso válido."
+            >
 
             <label for="altura">Altura: </label>
-            <input type="text" id="altura" name="altura" placeholder="0.00">
+
+            <input
+                type="text"
+                id="altura"
+                name="altura"
+                placeholder="Ex: 175"
+                inputmode="numeric"
+                required
+                title="Digite sua altura em centímetros. Exemplo: 175"
+            >
 
             <button type="submit">Calcular</button>
+
         </form>
-        
+
         <div id="resultado"></div>
+
     </section>
-    
+
     <script src="./js/pages/index/index.js"></script>
+
 </body>
+
 </html>
