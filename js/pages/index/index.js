@@ -26,8 +26,8 @@ inputPeso.addEventListener('input', function () {
     // Validação dinâmica do peso
     const peso = Number(this.value);
 
-    if (peso > 300) {
-        this.setCustomValidity('Digite um peso válido de até 300 kg.');
+    if (peso > 635) {
+        this.setCustomValidity('Digite um peso válido de até 635 kg.');
     } else if (peso <= 0) {
         this.setCustomValidity('Digite um peso válido.');
     } else {
