@@ -41,5 +41,5 @@
 }
 
 .wrong {
-    background: rgb(238, 164, 164);
+    background: var(--background-color-wrong);
 }
