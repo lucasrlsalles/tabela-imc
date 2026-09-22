@@ -1,5 +1,11 @@
 <h1 align="center">Tabela IMC: Calcule seu IMC</h1>
 
+<p align="center">
+  <a href="https://lucasrlsalles.github.io/tabela-imc/" target="_blank">
+    🚀 Acesse o projeto
+  </a>
+</p>
+
 <h2>Descrição:</h2>
 
 <p>Projeto desenvolvido com o objetivo de criar uma página web capaz de calcular o Índice de Massa Corporal (IMC) utilizando como referência o <strong>peso</strong> e a <strong>altura</strong> informados pelo usuário.</p>
@@ -15,6 +21,8 @@
   <li>Resultado apresentado com duas casas decimais;</li>
   <li>Classificação de acordo com o resultado obtido;</li>
   <li>Validação dos dados informados;</li>
+  <li>Validação dos campos obrigatórios;</li>
+  <li>Formatação automática dos valores de peso e altura;</li>
   <li>Interface responsiva para dispositivos móveis e desktops.</li>
 </ul>
 
@@ -30,9 +38,11 @@ IMC = PESO ÷ (ALTURA × ALTURA)
 
 <pre>
 Peso: 70 kg
+
 Altura: 1.75 m
 
 IMC = 70 ÷ (1.75 × 1.75)
+
 IMC = 22.86
 </pre>
 
@@ -45,31 +55,40 @@ IMC = 22.86
       <th>Classificação</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>Abaixo de 18,5</td>
       <td>Abaixo do peso</td>
     </tr>
-    <tr>
-      <td>18,5 – 24,9</td>
-      <td>Peso normal</td>
-    </tr>
-    <tr>
-      <td>25,0 – 29,9</td>
-      <td>Sobrepeso</td>
-    </tr>
-    <tr>
-      <td>30,0 – 34,9</td>
-      <td>Obesidade grau I</td>
-    </tr>
-    <tr>
-      <td>35,0 – 39,9</td>
-      <td>Obesidade grau II</td>
-    </tr>
-    <tr>
-      <td>40,0 ou mais</td>
-      <td>Obesidade grau III</td>
-    </tr>
+
+```
+<tr>
+  <td>18,5 – 24,9</td>
+  <td>Peso normal</td>
+</tr>
+
+<tr>
+  <td>25,0 – 29,9</td>
+  <td>Sobrepeso</td>
+</tr>
+
+<tr>
+  <td>30,0 – 34,9</td>
+  <td>Obesidade grau I</td>
+</tr>
+
+<tr>
+  <td>35,0 – 39,9</td>
+  <td>Obesidade grau II</td>
+</tr>
+
+<tr>
+  <td>40,0 ou mais</td>
+  <td>Obesidade grau III</td>
+</tr>
+```
+
   </tbody>
 </table>
 
@@ -78,9 +97,13 @@ IMC = 22.86
 <h3>🛠️ Ferramentas utilizadas</h3>
 
 <div style="display: inline_block"><br>
+
   <img align="center" alt="Lucas-HTML" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+
   <img align="center" alt="Lucas-CSS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+
   <img align="center" alt="Lucas-JS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+
 </div>
 
 <br>
