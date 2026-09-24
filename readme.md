@@ -123,5 +123,3 @@ IMC = 22.86
     Acesse a Tabela IMC
   </a>
 </p>
-
-<h3>👨‍💻 Autor</h3>
