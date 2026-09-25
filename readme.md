@@ -116,7 +116,7 @@ IMC = 22.86
 
 <p>Este projeto faz parte dos meus estudos em desenvolvimento web e foi desenvolvido para colocar em prática conceitos de <strong>HTML, CSS e JavaScript</strong>, incluindo manipulação do DOM, eventos, validação de dados, lógica de programação e responsividade.</p>
 
-<h3>🔗 Projeto</h3>
+<h3>🔗 Link do Projeto</h3>
 
 <p>
   <a href="https://lucasrlsalles.github.io/tabela-imc/" target="_blank">
