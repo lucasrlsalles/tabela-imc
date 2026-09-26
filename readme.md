@@ -120,6 +120,6 @@ IMC = 22.86
 
 <p>
   <a href="https://lucasrlsalles.github.io/tabela-imc/" target="_blank">
-    Acesse a Tabela IMC
+    Acesse a Tabela IMC aqui
   </a>
 </p>
